@@ -2,16 +2,27 @@ html{
   font-size: 100%;
   } 
 
+* { 
+  box-sizing: border-box; 
+}
+
 body {
 	
   	margin: 0px auto;
   	padding: 0px;
-  	background-color: #C1F7DC;
   	text-align: center;
   	font-family: 'Tinos', serif;
-  	max-width: 80%;
-
+  	max-width: 100%;
+    background-color: #A6808C;
+    color: white;
 }
+
+picture {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+
 
 nav {
   text-align: center;
@@ -36,13 +47,34 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  background-color: #A7ABDD;
+h1{
+  font-family: 'Josefin Slab', serif;
+
 }
 
-h1{
-	font-family: 'Josefin Slab', serif;
-	font-size:;
+main {
+  text-align: left;
+  background-color: #6B4D57;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: column wrap;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
 }
 
 .resbod ul li{
@@ -50,10 +82,23 @@ h1{
   list-style: none;
 }
 
+.main {
+  text-align: left;
+  padding: 0px 5px 40px 20px;
+  max-width: 60%;
+  margin: 0 auto;
 
-* { box-sizing: border-box; }
+}
 
-.row {
+.aside-1 {
+  background: #6B4D57;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/*.row {
   overflow: auto;
   margin-bottom: 16px;
 }
@@ -70,8 +115,22 @@ h1{
   padding: 16px;
   width: 100%;
 }
+*/
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
 
-@media screen and (min-width: 600px) {
+@media all and (min-width: 800px) {
+  .main    {
+    /* flex-grow: 3 times in size
+       flex-shrink: 0 (do not shrink) */
+    flex: 3 0;
+  }
+  .aside-1 { order: 1; }
+
+}
+
+/*@media screen and (min-width: 600px) {
   [class*="col-"] {
     background-color: #706677;
     border: 1px solid #565264;
@@ -94,17 +153,6 @@ h1{
   }
 }
 
-body {
-  background-color: #A6808C;
-  color: white;
-}
-
-  picture {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
     @media screen and (min-width: 832px) {
     .container {
       margin: 0 auto;
@@ -112,4 +160,4 @@ body {
     }
   }
 
-
+*/
