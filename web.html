@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Designs</title>
+	<title>Web Design</title>
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -10,8 +10,7 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Tinos" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
-
-  <noscript>
+ <noscript>
     <style>
       .visually-hidden {
         clip: none;
@@ -25,7 +24,7 @@
   </noscript>
 
 </head>
-
+<body>
 
   <svg style="display: none;">
     <symbol id="navicon" viewBox="0 0 32 32">
@@ -61,82 +60,27 @@
 	</header>
 </div>
 
-
 <main>
 	
- <ul class="photo-container">
-
-				<li class="photo">
+		<div class="webpage">
+			
+			<figure>
+				<a href="http://martinacalluori.com/zodiac/" target="_blank">
 					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/cg1525.png">
-
-						<img src="images/designs/cg1.jpg" alt="Cedar Green">
-					</picture>		
-				</li>
-
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/cg3525.png">
-
-						<img src="images/designs/cg3.jpg" alt="Cedar Green">
-						
-					</picture>		
-				</li>
-
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/cg2525.png">
-
-						<img src="images/designs/cg2.jpg" alt="Cedar Green">
-					</picture>		
-				</li>
-
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/atm1525.png">
-						<img src="images/designs/atm1.jpg" alt="Above the Mendoza">
-					</picture>	
-				</li>
-
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/atm2525.png">
-						<img src="images/designs/atm2.jpg" alt="alphabet soup design for Above The Mendoza">
+						<source media="(max-width: 400px)" srcset="images/zodiac350.jpg">
+						<source media="(max-width: 700px)" srcset="images/zodiac400.jpg">
+						<source media="(max-width: 800px)" srcset="images/zodiac600.jpg">
+						<source media="(min-width: 1100px)" srcset="images/zodiac1000.jpg">
+						<img src="images/zodiac600.jpg" alt="Zodiac">
 					</picture>
-				</li>
+				</a>
+				<figcaption class="caption"> Zodiac Calculator </figcaption>
+			</figure> 
 
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/atm3525.png">
-						<img src="images/designs/atm3.jpg" alt="Above the Mendoza">
-					</picture>	
-				</li>
-
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/tt2525.png">
-
-						<img src="images/designs/tt2.jpg" alt="Tied & True">
-					</picture>		
-				</li>
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/tt3525.png">
-
-						<img src="images/designs/tt3.jpg" alt="Tied & True">
-					</picture>		
-				</li>
-
-
-				<li class="photo">
-					<picture>
-						<source media="(min-width: 1600px)" srcset="images/designs/tt1525.png">
-						<img src="images/designs/tt1.jpg" alt="Tied & True">
-					</picture>	
-				</li>
-			</ul>
-<script src="js/scripts.js"></script>
-
+		</div>
+	
 </main>
 
+	<script src="js/scripts.js"></script>
+</body>
 </html>
