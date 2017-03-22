@@ -1,1 +1,0 @@
-the form again."; } else{ $from="From: $name<$email>\r\nReturn-path: $email"; $subject="Message sent using your contact form"; mail("contact@martinacalluori.com", $subject, $message, $from); echo "Email sent!"; } } ?>
