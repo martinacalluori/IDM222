@@ -239,15 +239,13 @@ input[type=text], textarea {
 .videos {
   text-align: center;
   display: inline-block;
+  width: 1080px;
+  height: 720px;
 }
 
-
-/*--------------------------------------------------------
-NAV
---------------------------------------------------------*/
- 
-
-
+video {
+  max-width: 100%;
+}
 
 .row-nav{
     background-color: black;
